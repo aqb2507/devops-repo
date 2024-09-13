@@ -13,7 +13,7 @@ class ConvertTemp(Resource):
     # Get arguments from query parameters
     temp = float(request.args.get('temp'))
     scale = request.args.get('scale').lower()
-    target_scale = request.args.get('target_scale').lower()
+    target_scale = request.args.get('target_scale').low()
     
     # Perform temperature conversion
     converted_temp = self.convert_temperature(temp, scale, target_scale)
